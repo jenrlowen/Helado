@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    color: #8c6e5d;
+    background-color: #e3dacd;
+    font-family: "Georgia", serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 5%;
+}
+
+.right-section {
+    flex: 1.2;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.welcome {
+    font-size: 28px;
+    color: #b3917a;
+    font-family: "DM Serif Text", serif;
+}
+
+.helado {
+    font-family: "Mea Culpa", cursive;
+    color: #956552;
+    font-size: 120px;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    text-align: left;
+    width: 100%;
+}
+
+input {
+    font-size: 16px;
+    color: #8c6e5d;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #b3917a;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    width: 350px;
+    outline: none;
+    font-family: "DM Serif Text", serif;
+}
+
+input::placeholder {
+    color: #b3917a;
+    opacity: 0.7;
+}
+
+.login-btn {
+    background-color: #57392e;
+    font-family: "DM Serif Text", serif;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 15px;
+    padding-left: 155px;
+    padding-right: 155px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #302019;
+    cursor: pointer;
+}
+
+.account {
+    color: #8c6e5d;
+    font-size: 16px;
+    width: 350px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "DM Serif Text", serif;
+}
+
+.account a {
+    color: #6d4c41;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.account a:hover {
+    text-decoration: underline;
+}
+
+.choc {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

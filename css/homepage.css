@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    height: 640px;
+}
+
+.left-side {
+    flex: 1;
+    position: relative;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+.carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    height: 70px;
+    width: auto;
+}
+
+.carousel-dots {
+    position: absolute;
+    gap: 15px;
+    bottom: 40px;
+    left: 50%;
+    display: flex;
+    z-index: 100;
+    transform: translateX(-50%);
+}
+
+.dot {
+    background: rgba(255, 255, 255, 0.4);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+}
+
+.right-side {
+    flex: 1;
+    background: #F5E6D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.tagline {
+    color: #cf9780;
+    font-size: 20px;
+    margin: 0;
+}
+
+.button {
+    background: #57392e;
+    color: white;
+    padding: 18px 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.button:hover {
+    background: #302019;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.title {
+    color: #956552;
+    font-family:  "Mea Culpa", cursive;
+    font-size: 140px;
+    margin: 0;
+}
