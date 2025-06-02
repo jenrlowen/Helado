@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Helado - Shop</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gafata&family=Mea+Culpa&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gafata&family=Mea+Culpa&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="frontend components/css/shop.css">
+
+    </head>
+
+<body>
+
+    <header>
+
+        <img src="frontend components/images/heading.jpg" alt="image of strawberry ice cream" class="heading">
+
+        <nav>
+            <img src="frontend components/images/logo.png" alt="minimalist logo of an ice cream cone" class="logo">
+
+            <div class="nav-links">
+                <a href="index-shop.html">Shop</a>
+                <a href="index-about.html">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="icons">
+                <a href="index-account.html"><img src="frontend components/images/profile.png" class="acc"></a>
+                <a href="index-cart.html"><img src="frontend components/images/cart.png" class="your-cart"></a>
+            </div>
+
+        </nav>
+
+    </header>
+    
+    <section class="shop">
+
+        <div class="title">Shop</div>
+        
+        <div class="products-container">
+
+            <!--product 1-->
+            <div class="product">
+
+                    <a href="index-product.html"><img src="frontend components/images/mango.jpg" alt="image of yellow ice cream on a plate" class="product-image"></a>
+
+                <h1 class="product-title">Turmeric Mango</h1>
+
+                <p class="product-desc">A golden fusion of exotic spice and luscious tropical fruit.</p>
+
+                <div class="select-wrapper">
+
+                    <select class="size-selector">
+
+                        <option>Pint(540ml)- $19.20</option>
+                        <option>Cup(120ml)- $6.50</option>
+                        <option>Quart(950ml)- $32.80</option>
+
+                    </select>
+
+                </div>
+
+                <div class="quantity-controls">
+
+                    <button class="quantity-btn">-</button>
+                    <input type="text" class="quantity" value="1" readonly>
+                    <button class="quantity-btn">+</button>
+
+                </div>
+
+                <button class="add-to-cart">Add to Cart</button>
+
+            </div>
+            
+            <!--product 2-->
+            <div class="product">
+
+                    <img src="frontend components/images/strawberry.jpg" alt="image of strawberry ice cream on a plate" class="product-image">
+
+                <h2 class="product-title">Balsamic Strawberry</h2>
+
+                <p class="product-desc">A harmonious blend of ripe berries and tangy richness.</p>
+
+                <div class="select-wrapper">
+
+                    <select class="size-selector">
+
+                        <option>Pint(540ml)- $19.20</option>
+                        <option>Cup(120ml)- $6.50</option>
+                        <option>Quart(950ml)- $32.80</option>
+
+                    </select>
+
+                </div>
+
+                <div class="quantity-controls">
+
+                    <button class="quantity-btn">-</button>
+                    <input type="text" class="quantity" value="1" readonly>
+                    <button class="quantity-btn">+</button>
+
+                </div>
+
+                <button class="add-to-cart">Add to Cart</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="frontend components/js/shop.js"></script>
+
+</body>
